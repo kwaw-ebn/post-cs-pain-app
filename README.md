@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Post-Caesarean Pain Streamlit Project
 
 Created by **Ebenezer Kwaw** & **Abena Onomah**
@@ -48,3 +49,7 @@ The app supports three ways to load data:
 - **Analytics Dashboard**: Visualize pain score distribution and factors
 - **About**: App info and future plans
 
+=======
+# post-cs-pain-app
+Streamlit app for post-caesarean pain prediction)
+>>>>>>> 95274b89b3bead7839acc0f5a35e21d48a1e4511
