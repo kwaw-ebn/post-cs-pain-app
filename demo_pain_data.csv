@@ -1,0 +1,11 @@
+Pain_Score,Surgery_Duration,Anaesthesia
+2,<30min,Spinal
+3,30-60min,Spinal
+6,>60min,General
+4,30-60min,Spinal
+8,>60min,General
+1,<30min,Spinal
+7,>60min,General
+5,30-60min,Spinal
+3,<30min,Spinal
+9,>60min,General
