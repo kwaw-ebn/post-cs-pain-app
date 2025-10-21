@@ -57,24 +57,12 @@ High = Pain_Score > 6
 # Navigate to your working directory
 cd ~/Documents
 
-# Clone your GitHub repository
-git clone https://github.com/<your-username>/post-caesarean-pain-dashboard.git
-
-cd post-caesarean-pain-dashboard
-
 2️⃣ Create a Python virtual environment
 python3 -m venv venv
 source venv/bin/activate
 
 3️⃣ Install dependencies
 pip install -r requirements.txt
-
-4️⃣ Run the app locally
-streamlit run app.py
-
-
-Then open your browser and go to:
-👉 http://localhost:8501
 
 🧩 Project Structure
 post-caesarean-pain-dashboard/
@@ -89,7 +77,6 @@ post-caesarean-pain-dashboard/
 
 💾 GitHub Version Control Commands (Ubuntu)
 
-After editing your code or files, run these commands to push changes to GitHub:
 
 # Check your current status
 git status
@@ -103,8 +90,6 @@ git commit -m "Updated Streamlit pain prediction app"
 # Push changes to GitHub
 git push origin main
 
-
-⚠️ Replace main with your branch name if you’re using a different one (e.g., master).
 
 ☁️ Streamlit Cloud Deployment Guide
 1️⃣ Prepare your repository
