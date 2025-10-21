@@ -15,7 +15,7 @@ else:
 
 st.sidebar.markdown("""
 ### Post-Caesarean Pain App  
-Created by **Ebenezer Kwaw** & **Abena Onomah**  
+Created by **Ebenezer Kwaw**   
 
 This prototype supports research and clinical decision-making on  
 **post-caesarean pain at Korle Bu Teaching Hospital**.  
@@ -113,5 +113,5 @@ on post-caesarean pain at Korle Bu Teaching Hospital.
 - Explore analytics with interactive visualizations
 - Future integration with DHIS2/EMR APIs
 
-Built with ❤️ by **Ebenezer Kwaw & Abena Onomah**
+Built with ❤️ by **Ebenezer Kwaw 
 """)
