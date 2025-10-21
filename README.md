@@ -1,55 +1,172 @@
 <<<<<<< HEAD
 # Post-Caesarean Pain Streamlit Project
 
-Created by **Ebenezer Kwaw** & **Abena Onomah**
+Created by **Ebenezer Kwaw** 
 
-This is a ready-to-run Streamlit app for predicting and analyzing post-caesarean pain.
+🩺 Post-Caesarean Pain Prediction & Analytics Dashboard
 
-## 1) Setup on Ubuntu/Linux
+Overview
+This Streamlit app supports research and clinical decision-making on post-caesarean pain at Korle Bu Teaching Hospital and beyond.
+It allows healthcare professionals to predict pain risk, analyze patient data, and visualize patterns interactively.
 
-```bash
-cd ~/Downloads
-unzip post_cs_pain_streamlit_project.zip -d post_cs_pain_streamlit_project
-cd post_cs_pain_streamlit_project
-python3 -m venv .venv
-source .venv/bin/activate
-pip install --upgrade pip
+🚀 Features
+
+✅ Pain Risk Prediction
+
+Predicts Low, Medium, or High risk based on surgery duration, anaesthesia type, and pain score.
+
+Uses a trained ML model stored as models/pain_predictor.pkl.
+
+✅ Data Uploads
+
+Supports CSV and Excel uploads.
+
+Option to load Google Form data directly via Google Sheets CSV link.
+
+✅ Analytics Dashboard
+
+Interactive visualizations (Plotly):
+
+Pain Score Distribution
+
+Pain Score by Surgery Duration & Anaesthesia
+
+✅ Simple UI
+
+Fully responsive and lightweight Streamlit interface.
+
+🧠 Model Details
+
+The trained model (models/pain_predictor.pkl) is a Random Forest Classifier trained using demo data.
+
+Feature	Description
+Surgery_Duration	<30min, 30-60min, or >60min
+Anaesthesia	Spinal or General
+Pain_Score	Numeric (0–10)
+
+Pain Risk Labels:
+
+Low = Pain_Score ≤ 3
+
+Medium = 4 ≤ Pain_Score ≤ 6
+
+High = Pain_Score > 6
+
+🛠️ Setup on Linux / Ubuntu
+1️⃣ Clone the repository
+# Navigate to your working directory
+cd ~/Documents
+
+# Clone your GitHub repository
+git clone https://github.com/<your-username>/post-caesarean-pain-dashboard.git
+
+cd post-caesarean-pain-dashboard
+
+2️⃣ Create a Python virtual environment
+python3 -m venv venv
+source venv/bin/activate
+
+3️⃣ Install dependencies
 pip install -r requirements.txt
+
+4️⃣ Run the app locally
 streamlit run app.py
-```
 
-## 2) Uploading Data
 
-The app supports three ways to load data:
+Then open your browser and go to:
+👉 http://localhost:8501
 
-### a) Upload CSV
-- Export your dataset as `.csv`
-- Go to **Upload Data** in the sidebar
-- Select your file → preview appears
+🧩 Project Structure
+post-caesarean-pain-dashboard/
+│
+├── app.py                    # Main Streamlit application
+├── demo_pain_data.csv         # Sample dataset
+├── models/
+│   └── pain_predictor.pkl     # Trained ML model
+├── requirements.txt           # Python dependencies
+├── logo.jpg                   # Optional logo (Korle Bu / RootsLink / WHO)
+└── README.md                  # Documentation
 
-### b) Upload Excel
-- Supported format: `.xlsx`
-- Select your file under **Upload Data**
+💾 GitHub Version Control Commands (Ubuntu)
 
-### c) Google Forms / Google Sheets
-- In Forms: **Responses → Open in Google Sheets**
-- In Sheets: **File → Share → Publish to Web → CSV format**
-- Copy the link (must end with `export?format=csv`)
-- Paste it in the app to fetch live responses
+After editing your code or files, run these commands to push changes to GitHub:
 
-## 3) Adding Your Logo
+# Check your current status
+git status
 
-- Place `logo.jpg` in the project root (same folder as `app.py`).
-- It will automatically appear in the sidebar.
+# Stage all changes
+git add .
 
-## 4) Features
+# Commit with a message
+git commit -m "Updated Streamlit pain prediction app"
 
-- **Upload Data**: CSV, Excel, or Google Forms
-- **Prediction**: Uses ML model (`models/pain_predictor.pkl` if available)
-- **Analytics Dashboard**: Visualize pain score distribution and factors
-- **About**: App info and future plans
+# Push changes to GitHub
+git push origin main
 
-=======
-# post-cs-pain-app
-Streamlit app for post-caesarean pain prediction)
->>>>>>> 95274b89b3bead7839acc0f5a35e21d48a1e4511
+
+⚠️ Replace main with your branch name if you’re using a different one (e.g., master).
+
+☁️ Streamlit Cloud Deployment Guide
+1️⃣ Prepare your repository
+
+Ensure your repo contains:
+
+app.py
+requirements.txt
+models/pain_predictor.pkl
+demo_pain_data.csv
+README.md
+
+2️⃣ Push everything to GitHub
+
+From your Ubuntu terminal:
+
+git add .
+git commit -m "Final version for Streamlit Cloud"
+git push origin main
+
+3️⃣ Deploy on Streamlit Cloud
+
+Go to https://share.streamlit.io
+
+Sign in with your GitHub account.
+
+Click “New app” → Select your repo and branch.
+
+Enter the path to your main app file (e.g. app.py).
+
+Click Deploy 🚀
+
+Streamlit Cloud will automatically install your dependencies and start the app.
+
+📊 Example (Prediction Tab)
+Field	Example
+Surgery Duration	30–60min
+Type of Anaesthesia	Spinal
+Pain Score	5
+
+Predicted Output:
+✅ Predicted Pain Risk: Medium
+
+🧑‍💻 Tech Stack
+
+Python 3.9+
+
+Streamlit for web interface
+
+Plotly for analytics visualization
+
+Scikit-learn for machine learning
+
+Pandas for data manipulation
+
+❤️ Author
+
+Developed by Ebenezer Kwaw
+Public Health | Data Science | Machine Learning | AI for Health
+
+📧 Email: [ekwaw4545@gmail.com]
+]
+🌐 GitHub: [github.com/kwaw-ebn]
+
+
